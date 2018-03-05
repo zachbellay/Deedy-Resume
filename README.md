@@ -5,7 +5,7 @@ My resume done in LaTeX for ease of maintenance.
 
 This resume is a forked version of the [Deedy-Resume](https://github.com/deedy/Deedy-Resume).
 
-![resume](https://docs.google.com/viewer?url=https://github.com/zachbellay/Deedy-Resume/raw/master/Resume/resume.pdf)
+https://docs.google.com/viewer?url=https://github.com/zachbellay/Deedy-Resume/raw/master/Resume/resume.pdf
 
 ## License
     Copyright 2014 Debarghya Das
