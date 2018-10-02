@@ -3,7 +3,7 @@
  
 \pagestyle{fancy}
 \fancyhf{}
- 
+  
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -19,7 +19,6 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{ZACH BELLAY}{ 
-%\fontspec[Path = fonts/century-gothic/]{GOTHICB}{COMPUTER ENGINEER}\\
 \fontspec[Path = fonts/century-gothic/]{GOTHIC}{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} | (425) 444-7070}
 }
 
@@ -38,7 +37,7 @@
 \section{Education} 
 \runsubsection{Santa Clara University}
 \location{Santa Clara, CA | June 2019}
-B.S. in Computer Science and Engineering \\
+B.S. in Computer Engineering \\
 GPA: 3.1/4.0
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,27 +47,34 @@ GPA: 3.1/4.0
 \section{Skills}
 \runsubsection{LANGUAGES}
 \location{}{
-Proficient: C/C++, Python \\
-Familiar: Javascript, HTML/CSS, ARM Assembly
+\locationbold{25+ Projects:} C, Python, Arduino \\
+\locationbold{5+ Projects:} C++, JavaScript, Shell, HTML/CSS \\
+\locationbold{Familiar:} MySQL, PHP, Solidity, Matlab, Assembly, Node.js
 }
+
+\quad
 
 \runsubsection{LIBRARIES \& TOOLS}
 \location{}{
-Git: Github \\
-Python: OpenCV, Boto3, Flask \\
-AWS: S3, EC2, Lightsail \\
-Arduino: ArduinoJSON, WiFi, PID
+\locationbold{Git:} Github, Bitbucket \\
+\locationbold{Python:} OpenCV, Boto3, Flask, sklearn \\
+\locationbold{AWS:} S3, EC2, Lightsail \\
+\locationbold{Arduino:} ArduinoJSON, WiFi, PID
 }
+
+\quad
 
 \runsubsection{Hardware}
 \location{}{
 Arduino Uno \& Mega, NodeMCU ESP8266, Raspberry Pi 3
 }
 
+\quad
+
 \runsubsection{Design}
 \location{}{
-2D: Illustrator, Photoshop \\
-3D: Blender, Fusion 360, FreeCAD
+\locationbold{2D:} Illustrator, Photoshop \\
+\locationbold{3D:} Blender, FreeCAD
 }
 
 \sectionsep
@@ -80,18 +86,15 @@ Arduino Uno \& Mega, NodeMCU ESP8266, Raspberry Pi 3
 \section{Coursework}
 \runsubsection{Computer Science}
 \location{}{
+Adv. Computer Architecture
+Software Engineering \\
+Computer Architecture \\
 Applied Machine Learning \\
 Data Science \\
 Computer Networks \\
 Theory of Algorithms \\
 Operating Systems \\
-Programming Languages \\
-Digital IC Design \\
-Intro to Embedded Systems Programming \\
-Advanced Data Structures in C++ \\
-Data Structures in C \\
-Advanced Programming in C \\
-Intro to Logic Design \\
+Web Infrastructure \\
 }
 \sectionsep
 
@@ -129,34 +132,36 @@ GitHub: \href{https://github.com/zachbellay/}{\bf /zachbellay} \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+
+\runsubsection{OnePointOne}
+\descript{| Software Engineer}
+\location{Jan 2018 - Present | San Jose, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created multi-camera IoT array to capture images to determine plant health.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Ford Motor Company}
 \descript{| Hardware and Controls Intern}
 \location{Jun 2018 - Sep 2018 | Palo Alto, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Writing software to abstract hardware for a reconfigurable automotive electronics control module. Written in C.
+\begin{tightemize}%
+
+\item Developed applications for OHM (Onboard Holistic Module): an "Arduino for cars."
+ 
+\item Configured underlying microcontroller to use AUTOSAR MCAL, a production grade framework for automotive microcontrollers.
+
+\item Won first place in summer hackathon. Created vehicle crash data marketplace PoC using Ethereum blockchain and Interplanetary File System (IPFS). {\href {https://www.youtube.com/watch?v=Fvz7ZRkD_6U}{Demo on LinkedIn.}}
+
 \end{tightemize}
 \sectionsep
 
 \runsubsection{SCU Robotic Systems Lab}
 \descript{| Software Engineering Intern}
 \location{Jan 2017 - Sep 2017 | Santa Clara, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item In charge of all hardware and software systems to manage the
-automation of an indoor vertical farming prototype. Implemented
-with Arduino, Raspberry Pi, Python, C/C++, HTML/CSS/JS.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{iD Tech Camps}
-\descript{| Robotics and Programming Instructor  }
-\location{June 2016 – Aug 2016 | Seattle, WA}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Introduced students ages 6-12 to the foundations of programming
-and robotics through LEGO NXT EV3 Robotics kit and the Scratch-like
-game programming platform Tynker.
+\item Created indoor vertical farming prototype.
+\item Used Arduino, Raspberry Pi, Python, HTML/CSS/JS.
 \end{tightemize}
 \sectionsep
 
@@ -165,20 +170,31 @@ game programming platform Tynker.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\runsubsection{Omnidirectional Autonomous Fish Tank}
+\runsubsection{Omnidirectional Goldfish Robot}
 %\descript{| [In Progress]}
 \location{}{June 2017 – Present \\}
 \begin{tightemize}
-\item Omnidirectional chassis with mounted fish tank. Fish movements are
-captured with OpenCV and translated into commands to drive the robot.
+\item Designed omnidirectional chassis with mounted fish bowl. 
+\item Created custom Arduino Mega shield for electrical connections.
+\item Developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
 \end{tightemize}
 \sectionsep
 
+\runsubsection{Bluetooth Mesh Network}
+\location{}{March 2018\\}
+\begin{tightemize}
+\item Created Bluetooth mesh network between Android devices to provide connectivity during network outages.
+\item Developed interface between Android devices and Raspberry Pi to act as gateway to internet.
+\item Won second place at SCU's Hack for Humanity hackathon.
+\end{tightemize}
+\sectionsep
+
+
 \runsubsection{WiFi Bike Tracker}
-%\descript{| [Completed]}
 \location{}{Sept 2017 - Feb 2018\\}
 \begin{tightemize}
-\item Arduino WiFi chip used to track bike location. Utilized Google Geolocation API and reported results to Python Flask server.
+\item Used NodeMCU ESP8266 (Arduino WiFi chip) to track bike location on SCU campus.
+\item Utilized Google Geolocation API and reported results to Python Flask server on Raspberry Pi.
 \end{tightemize}
 \sectionsep
 
@@ -186,40 +202,13 @@ captured with OpenCV and translated into commands to drive the robot.
 %\descript{| [Completed]}
 \location{}{April 2017 \\}
 \begin{tightemize}
-\item Raspberry Pi Camera and Python OpenCV used to prototype a door lock that unlocks with facial recognition. Details under {\href{https://github.com/zachbellay/facial-recognition-door}{facial-recognition-door}}  on GitHub.
+\item Prototyped door lock that unlocks with facial recognition. 
+\item Used Raspberry Pi Camera and Python OpenCV.
+\item Under {\href{https://github.com/zachbellay/facial-recognition-door}{facial-recognition-door}} on GitHub.
 \end{tightemize}
 \sectionsep
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Involvement
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Involvement}
-\runsubsection{Theta Tau}
-\descript{| President \& Co-founder}
-\location{May 2016 – Sep 2018}
-\begin{tightemize}
-\item Created a co-ed professional engineering fraternity to bring
-engineering students closer together and to help develop each other
-professionally. What started as an idea is now a group of 47 high achieving
-engineering students. 
-\end{tightemize}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2018	     & 1\textsuperscript{st} Place  & Ford Intern Hackathon\\
-2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
-2016	     & 2\textsuperscript{nd} Place  & Google Games\\
-\end{tabular}
-\sectionsep
 
 
 \end{minipage} 

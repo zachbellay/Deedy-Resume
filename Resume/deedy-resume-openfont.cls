@@ -58,9 +58,6 @@ Last Updated on \today
 \titleformat{\section}{\color{headings}
 \scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
-% Subheadings command
-%\titleformat{\subsection}{
-%\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 \titleformat{\subsection}{
 \color{subheadings}\fontspec[Path = fonts/century-gothic/]{GOTHIC}\fontsize{14pt}{14pt}\selectfont\bfseries\uppercase}{}{0em}{}
@@ -80,6 +77,10 @@ Last Updated on \today
 % Location command
 \newcommand{\location}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+
+% Location bold
+\newcommand{\locationbold}[1]{
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Bold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
