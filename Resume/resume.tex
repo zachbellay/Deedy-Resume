@@ -1,5 +1,7 @@
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{fontawesome}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -19,7 +21,17 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{ZACH BELLAY}{ 
-\fontspec[Path = fonts/century-gothic/]{GOTHIC}{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} | (425) 444-7070}
+\fontspec[Path = fonts/century-gothic/]{GOTHIC}
+%
+\begin{large} \faGithubSquare \end{large}
+\href{https://github.com/zachbellay/}{/zachbellay} \qquad 
+%
+\begin{large} \faEnvelope \end{large}
+{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} \qquad
+%
+\begin{large} \faPhone \end{large} (425) 444-7070} \qquad
+%
+\begin{large} \faLinkedinSquare \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,9 +105,18 @@ Arduino Uno \& Mega, NodeMCU ESP8266, Raspberry Pi 3
 \runsubsection{Graduate}
 \location{}{
 Adv. Computer Architecture \\
-Adv. Operating Systems \\
-Artificial Intelligence \\
-Mathematical Finance \\
+Adv. Operating Systems 
+\begin{footnotesize}
+(Winter 2019)
+\end{footnotesize}
+Artificial Intelligence
+\begin{footnotesize}
+(Spring 2019)
+\end{footnotesize}
+Mathematical Finance
+\begin{footnotesize}
+(Spring 2019)
+\end{footnotesize}
 }
 \sectionsep
 
@@ -111,14 +132,6 @@ Operating Systems \\
 Web Infrastructure \\
 }
 \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-LinkedIn: \href{https://www.linkedin.com/in/zachbellay/}{\bf /in/zachbellay} \\
-GitHub: \href{https://github.com/zachbellay/}{\bf /zachbellay} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -189,7 +202,7 @@ GitHub: \href{https://github.com/zachbellay/}{\bf /zachbellay} \\
 \location{}{March 2018\\}
 \begin{tightemize}
 \item Created Bluetooth mesh network between Android devices to provide connectivity during network outages.
-\item Developed interface between Android devices and Raspberry Pi to act as gateway to internet.
+\item Developed interface between Android devices and Raspberry Pi to act as a gateway to internet.
 \item Won second place at SCU's Hack for Humanity hackathon.
 \end{tightemize}
 \sectionsep
