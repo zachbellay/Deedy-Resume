@@ -40,7 +40,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.31\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -50,52 +50,16 @@
 \runsubsection{Santa Clara University}
 \location{Santa Clara, CA | June 2020}
 M.S. in Computer Engineering \\
+GPA: 3.400/4.0
 
-\quad
+\sectionsep
 
 \runsubsection{Santa Clara University}
 \location{Santa Clara, CA | June 2019}
 B.S. in Computer Engineering \\
-GPA: 3.1/4.0
+GPA: 3.257/4.0\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\runsubsection{LANGUAGES}
-\location{}{
-\locationbold{25+ Projects:} C, Python, Arduino \\
-\locationbold{5+ Projects:} C++, JavaScript, Shell, HTML/CSS \\
-\locationbold{Familiar:} MySQL, PHP, Solidity, Matlab, Assembly, Node.js, \LaTeX
-}
-
-\quad
-
-\runsubsection{LIBRARIES \& TOOLS}
-\location{}{
-\locationbold{Git:} Github, Bitbucket \\
-\locationbold{Python:} OpenCV, Boto3, Flask, sklearn \\
-\locationbold{AWS:} S3, EC2, Lightsail \\
-\locationbold{Arduino:} ArduinoJSON, WiFi, PID
-}
-
-\quad
-
-\runsubsection{Hardware}
-\location{}{
-Arduino Uno \& Mega, NodeMCU ESP8266, Raspberry Pi 3
-}
-
-\quad
-
-\runsubsection{Design}
-\location{}{
-\locationbold{2D:} Illustrator, Photoshop \\
-\locationbold{3D:} Blender, FreeCAD
-}
-
-\sectionsep
+\smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -104,19 +68,14 @@ Arduino Uno \& Mega, NodeMCU ESP8266, Raspberry Pi 3
 \section{Coursework}
 \runsubsection{Graduate}
 \location{}{
-Artificial Intelligence
-\begin{footnotesize}
-(Spring 2019)
-\end{footnotesize}
-Mathematical Finance
-\begin{footnotesize}
-(Spring 2019)
-\end{footnotesize}
-Adv. Operating Systems 
-\begin{footnotesize}
-(Winter 2019)
-\end{footnotesize}
+Computer Vision I, II \\
+Digital Signal Processing \\
+ML \& DSP on FPGA \\
+Computational Creativity \\
+Adv. Operating Systems \\
 Adv. Computer Architecture \\
+%Mathematical Finance \\
+%Secure Coding in C/C++ \\
 }
 \sectionsep
 
@@ -124,16 +83,73 @@ Adv. Computer Architecture \\
 
 \runsubsection{Undergraduate}
 \location{}{
-Software Engineering \\
-Computer Architecture \\
-Applied Machine Learning \\
 Data Science \\
-Computer Networks \\
+Applied Machine Learning \\
+%Probability \& Statistics \\
+%Linear Algebra \\
 Theory of Algorithms \\
+Software Engineering \\
+Computer Networks \\
 Operating Systems \\
+Computer Architecture \\
 Web Infrastructure \\
 }
 \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\runsubsection{LANGUAGES}
+\location{}{
+Python • C • C++ • MATLAB\\
+JavaScript • HTML/CSS • Bash \\  
+}
+
+\quad
+
+\runsubsection{MACHINE LEARNING \& COMPUTER VISION}
+\location{}{
+
+Keras • Scikit-learn • OpenCV \\  
+Numpy • Pandas • Jupyter Notebook • Matplotlib 
+}
+
+\quad
+
+\runsubsection{Backend \& Cloud}
+\location{}{
+Docker • Kubernetes • Helm\\
+MongoDB • MySQL • InfluxDB  \\
+AWS EC2 • Gunicorn • Flask
+%\locationbold{Git:} Github, Bitbucket \\
+%\locationbold{Python:} OpenCV, Boto3, Flask, sklearn \\
+%\locationbold{AWS:} S3, EC2, Lightsail \\
+%\locationbold{Arduino:} ArduinoJSON, WiFi, PID
+}
+
+\quad
+
+\runsubsection{HARDWARE}
+\location{}{
+Raspberry Pi • Jetson Nano\\
+Teensy 3.2/3.6 • Arduino Uno/Mega •
+Soldering
+}
+
+\quad
+
+\runsubsection{CAD}
+\location{}{
+Fusion 360 • Blender • 3D Printing\\
+
+
+
+}
+
+\sectionsep
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -151,37 +167,57 @@ Web Infrastructure \\
 
 \section{Experience}
 
-\runsubsection{OnePointOne}
-\descript{| Software Engineer}
-\location{Jan 2018 - Present | San Jose, CA}
+\runsubsection{Ford Motor Company}
+\descript{| Product Development Intern}
+\location{Jun 2019 - Sep 2019 | Palo Alto, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}%
+
+\item Developed and deployed small sensor network from scratch using   Kubernetes, Docker, InfluxDB, Flask, Gunicorn, LoRa, Arduino, The Things Network, LoRaWAN, and Fusion 360.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{OnePointOne}
+\descript{| Computer Vision Intern}
+\location{Jan 2018 - Mar 2019 | San Jose, CA}
 \begin{tightemize}
 \item Created multi-camera IoT array to capture images of plants growing on a vertical plane.
-\item Used Python and OpenCV to remove fish-eye camera distortion from captured images.
-\item Used Matlab computer vision toolbox to explore thresholds for identifying plant segments.
+\item Developed image processing pipeline to remove lens distortion and to perform image stitching.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Ford Motor Company}
-\descript{| Hardware and Controls Intern}
+\descript{| Product Development Intern}
 \location{Jun 2018 - Sep 2018 | Palo Alto, CA}
 \begin{tightemize}%
 
-\item Developed applications for OHM (Onboard Holistic Module): an "Arduino for cars."
+\item Developed applications for Ford's "Arduino for cars."
  
-\item Configured underlying microcontroller to use AUTOSAR MCAL, a production grade framework for automotive microcontrollers.
-
-\item Won first place in summer hackathon. Created vehicle crash data marketplace proof of concept using Ethereum blockchain and Interplanetary File System (IPFS). {\href {https://www.linkedin.com/in/zachbellay/}{Demo on LinkedIn.}}
+\item Created vehicle crash data marketplace proof of concept using Ethereum blockchain and InterPlanetary File System.
 
 \end{tightemize}
 \sectionsep
+
+%\runsubsection{Breakout Mentors}
+%\descript{| Python Tutor}
+%\location{Jan 2018 - Jun 2018 | Santa Clara, CA}
+%\begin{tightemize}
+%\item Tutored middle school students one-on-one on how to program video games in Python using PyGame.
+%
+%\end{tightemize}
+%\sectionsep
+
+
 
 \runsubsection{SCU Robotic Systems Lab}
 \descript{| Software Engineering Intern}
 \location{Jan 2017 - Sep 2017 | Santa Clara, CA}
 \begin{tightemize}
-\item Created indoor vertical farming prototype.
-\item Used Arduino, Raspberry Pi, Python, HTML/CSS/JS.
+\item Built system  to control indoor vertical farming prototype using JSON-based Raspberry Pi to Arduino serial protocol, secure RESTful API with Python Flask via TLS, and web interface for API.
+
+\item Prototype was used in a pitch that resulted in \$1.4M seed funding.
+
 \end{tightemize}
 \sectionsep
 
@@ -190,46 +226,56 @@ Web Infrastructure \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Projects}
-\runsubsection{Omnidirectional Goldfish Robot}
+\runsubsection{Robust Moving Object Detection}
+\location{}{June 2018 – May 2019 \\}
+\begin{tightemize}
+\item Developed and implemented robust moving object detection algorithm with Python for senior design project.
+\item Paper accepted at SPIE Defense + Commercial Sensing Conference.
+
+\end{tightemize}
+\sectionsep
+
+\textsc{\runsubsection{Fingerprint Matching}
+\location{}{May 2019\\}
+\begin{tightemize}
+\item Compared SIFT, SURF, and CNN feature extraction methods for fingerprint matching on the SOCOFing fingerprint dataset.
+\end{tightemize}}
+\sectionsep
+
+\runsubsection{"Self Driving" Fish Tank}
 %\descript{| [In Progress]}
 \location{}{June 2017 – Present \\}
 \begin{tightemize}
-\item Designed omnidirectional chassis with mounted fish bowl. 
-\item Created custom Arduino Mega shield for electrical connections.
-\item Developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
+\item Designed omnidirectional robot with mounted fish bowl in Fusion 360.
+\item Developed drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Bluetooth Mesh Network}
-\location{}{March 2018\\}
-\begin{tightemize}
-\item Created Bluetooth mesh network between Android devices to provide connectivity during network outages.
-\item Developed interface between Android devices and Raspberry Pi to act as a gateway to internet.
-\item Won second place at SCU's Hack for Humanity hackathon.
-\end{tightemize}
+%\textsc{\runsubsection{Bluetooth Mesh Network}
+%\location{}{March 2018\\}
+%\begin{tightemize}
+%\item Created Bluetooth mesh network between Android devices to provide connectivity during network outages.
+%\item Developed interface between Android devices and Raspberry Pi to act as a gateway to internet.
+%\end{tightemize}}
+
+%\textsc{\runsubsection{Fingerprint Matching }
+%\location{}{March 2018\\}
+%\begin{tightemize}
+%\item Created Bluetooth mesh network between Android devices to provide connectivity during network outages.
+%\item Developed interface between Android devices and Raspberry Pi to act as a gateway to internet.
+%\end{tightemize}}
+
+%\sectionsep
+
+\section{Awards} 
+\begin{tabular}{rll}
+2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+2019	     & Best in Session & Senior Design Conference\\
+2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
+2016	     & 2\textsuperscript{nd} Place  & Google Games\\
+\end{tabular}
 \sectionsep
-
-
-\runsubsection{WiFi Bike Tracker}
-\location{}{Sept 2017 - Feb 2018\\}
-\begin{tightemize}
-\item Used NodeMCU ESP8266 (Arduino compatible WiFi chip) to track bike location on SCU campus.
-\item Utilized Google Geolocation API and reported results to Python Flask server on Raspberry Pi.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Facial Recognition Door}
-%\descript{| [Completed]}
-\location{}{April 2017 \\}
-\begin{tightemize}
-\item Prototyped door lock that unlocks with facial recognition. 
-\item Used Raspberry Pi Camera and Python OpenCV.
-\item Under {\href{https://github.com/zachbellay/facial-recognition-door}{facial-recognition-door}} on GitHub.
-\end{tightemize}
-\sectionsep
-
-
-
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
