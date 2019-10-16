@@ -18,6 +18,7 @@
 \definecolor{primary}{HTML}{000000} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{RGB}{43, 82, 88}
+%\definecolor{objective}{RGB}{31, 59, 63}
 
 % Set main fonts
 \usepackage{fontspec}
@@ -74,6 +75,14 @@ Last Updated on \today
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
+% Objective command
+\newcommand{\objective}[1]{
+\color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{9pt}{10pt}\selectfont\bfseries {#1} \normalfont}
+
+% Objective text
+\newcommand{\objectivetext
+}[1]{
+\color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{8pt}{9pt}\selectfont\bfseries {#1} \normalfont}
 % Location command
 \newcommand{\location}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
