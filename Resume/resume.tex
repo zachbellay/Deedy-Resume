@@ -1,8 +1,24 @@
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
-\usepackage{fontawesome}
- 
+\usepackage{scrextend}
+%\usepackage{fontawesome}
+
+% Adds Font Awesome to XeLaTeX from system fonts (must have Font Awesome installed in system fonts)
+\newfontfamily{\FAFR}{Font Awesome 5 Free Regular}
+\newfontfamily{\FAFS}{Font Awesome 5 Free Solid}
+\newfontfamily{\FAB}{Font Awesome 5 Brands Regular}
+
+% Macros to define symbols for Font Awesome icons
+\def\faEmail{{\FAFR \symbol{"F0E0}}} % Email
+\def\faPhone{\FAFS \symbol{"F095}} % Phone
+\def\faLinkedin{\FAB \symbol{"F08C}} % Linkedin
+\def\faGithub{\FAB \symbol{"F09B}} % Github
+
+% Removes the "References" tag that comes default with the bibliography
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
 \pagestyle{fancy}
 \fancyhf{}
   
@@ -20,18 +36,18 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{ZACH BELLAY}{ 
+\namesection{}{Zach Bellay}{ 
 \fontspec[Path = fonts/century-gothic/]{GOTHIC}
 %
-\begin{large} \faGithubSquare \end{large}
+\begin{large} \faGithub \end{large}
 \href{https://github.com/zachbellay/}{/zachbellay} \qquad 
 %
-\begin{large} \faEnvelope \end{large}
+\begin{large} \faEmail \end{large}
 {\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} \qquad
 %
 \begin{large} \faPhone \end{large} (425) 444-7070} \qquad
 %
-\begin{large} \faLinkedinSquare \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
+\begin{large} \faLinkedin \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
 
 }
 
@@ -47,8 +63,41 @@
 %\objective{Objective:}
 %\objectivetext{Masters Computer Engineering student looking for full-time positions /%in computer vision or machine learning starting after June 2020.}
 
+\hfill
+\begin{minipage}[t]{0.70\textwidth} 
 
-\begin{minipage}[t]{0.66\textwidth} 
+\section{Education}
+
+\runsubsection{Santa Clara University}
+
+
+
+
+\newcommand{\normalbold}[1]{\color{headings}\fontspec[Path = fonts/century-gothic/]{GOTHICB}\normalsize{#1}}
+
+\textline{\normal{Master of Science, Computer Science and Engineering, June 2020}}{}{\normal{GPA: 3.37/4.0}}
+
+\begin{addmargin}[2em]{0em}% 1em left, 2em right
+\normal{ Thesis: Applying deep learning (Generative Adversarial Networks) to video compression. Implemented using PyTorch and Keras.}
+\end{addmargin}
+
+
+\textline{\normal{Bachelor of Science, Computer Science and Engineering, June 2019}}{}{\normal{GPA: 3.26/4.0}}
+
+
+%Master of Science, Computer Science and Engineering, June 2020			GPA: 3.34/4.0
+%	Thesis: Applying deep learning (Generative Adversarial Networks) to video compression. 	Implemented using PyTorch and Keras.
+%	Coursework: Computer Vision I, Computer Vision II, Digital Signal Processing, 	Machine 	Learning on FPGA, Information Theory, Advanced Algorithms
+%		
+%Bachelor of Science, Computer Science and Engineering, June 2019		GPA: 3.26/4.0	
+%	Coursework: Data Science, Applied Machine Learning, Software Engineering, Computer 	Networks, 	Operating Systems, Computer Architecture, Algorithms, Data Structures
+
+\sectionsep
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -59,10 +108,11 @@
 \runsubsection{Ford Motor Company}
 \descript{| Product Development Intern}
 \location{Jun 2019 - Sep 2019 | Palo Alto, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}%
 
-\item Developed and deployed small sensor network from scratch using   Kubernetes, Docker, InfluxDB, Flask, Gunicorn, LoRa, Arduino, The Things Network, LoRaWAN, and Fusion 360.
+\item Compared Support Vector Machines (SVM) and Convolutional Neural Network (CNN) in traffic sign detection.
+\item Developed and deployed small sensor network from scratch.
 
 \end{tightemize}
 \sectionsep
@@ -88,24 +138,11 @@
 \end{tightemize}
 \sectionsep
 
-%\runsubsection{Breakout Mentors}
-%\descript{| Python Tutor}
-%\location{Jan 2018 - Jun 2018 | Santa Clara, CA}
-%\begin{tightemize}
-%\item Tutored middle school students one-on-one on how to program video games in Python using PyGame.
-%
-%\end{tightemize}
-%\sectionsep
-
-
-
 \runsubsection{SCU Robotic Systems Lab}
 \descript{| Software Engineering Intern}
 \location{Jan 2017 - Sep 2017 | Santa Clara, CA}
 \begin{tightemize}
-\item Built system  to control indoor vertical farming prototype using JSON-based Raspberry Pi to Arduino serial protocol, secure RESTful API with Python Flask via TLS, and web interface for API.
-
-\item Prototype was used in a pitch that resulted in \$1.4M seed funding.
+\item Built system to control indoor vertical farming system which was used in a pitch that resulted in \$1.4M seed funding.
 
 \end{tightemize}
 \sectionsep
@@ -114,18 +151,17 @@
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \section{Projects}
 \runsubsection{Robust Moving Object Detection}
-\location{}{June 2018 – May 2019 \\}
+\location{\\June 2018 – May 2019}
 \begin{tightemize}
-\item Developed and implemented robust moving object detection algorithm with Python for senior design project.
-\item Paper accepted at SPIE Defense + Commercial Sensing Conference.
-
+\item Developed and implemented robust moving object detection using L1 principal component analysis with Python.
 \end{tightemize}
 \sectionsep
 
 \textsc{\runsubsection{Fingerprint Matching}
-\location{}{May 2019\\}
+\location{\\May 2019}
 \begin{tightemize}
 \item Compared SIFT, SURF, and CNN feature extraction methods for fingerprint matching on the SOCOFing fingerprint dataset.
 \end{tightemize}}
@@ -133,10 +169,9 @@
 
 \runsubsection{"Self Driving" Fish Tank}
 %\descript{| [In Progress]}
-\location{}{June 2017 – Present \\}
+\location{\\June 2017 – Present}
 \begin{tightemize}
-\item Designed omnidirectional robot with mounted fish bowl in Fusion 360.
-\item Developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
+\item Designed omnidirectional robot with mounted fish bowl in Fusion 360 and developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
 \end{tightemize}
 \sectionsep
 
@@ -156,15 +191,21 @@
 
 %\sectionsep
 
-\section{Awards} 
-\begin{tabular}{rll}
-2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
-2019	     & Best in Session & Senior Design Conference\\
-2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
-2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
-2016	     & 2\textsuperscript{nd} Place  & Google Games\\
-\end{tabular}
-\sectionsep
+\section{Publications \& Patents} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+%2019	     & Best in Session & Senior Design Conference\\
+%2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+%2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
+%2016	     & 2\textsuperscript{nd} Place  & Google Games\\
+%\end{tabular}
+%\sectionsep
 
 \sectionsep
 
@@ -176,31 +217,53 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{minipage} 
-\hfill
-\begin{minipage}[t]{0.31\textwidth} 
+\hfill 
+%\begin{minipage}[t]{0.29\textwidth} 
+%\begin{minipage}[t]{0.29\textwidth} 
+\begin{minipage}[t]{0.20\textwidth} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
-\runsubsection{Santa Clara University}
-\location{Santa Clara, CA | June 2020}
-M.S. in Computer Engineering \\
-Pursuing thesis in GANs \\
-GPA: 3.400/4.0
+% \section{Education} 
+% \runsubsection{Santa Clara University}
+% \location{Santa Clara, CA | June 2020}
+% M.S. in Computer Engineering \\
+% Pursuing thesis in GANs \\
+% GPA: 3.400/4.0
 
-\sectionsep
+% \sectionsep
 
-\runsubsection{Santa Clara University}
-\location{Santa Clara, CA | June 2019}
-B.S. in Computer Engineering \\
-GPA: 3.257/4.0\\
+% \runsubsection{Santa Clara University}
+% \location{Santa Clara, CA | June 2019}
+% B.S. in Computer Engineering \\
+% GPA: 3.257/4.0\\
 
-\smallskip
+% \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\fontspec[Path = fonts/century-gothic/]{GOTHIC}
+%
+%\begin{large} \faGithub \end{large}
+%\href{https://github.com/zachbellay/}{/zachbellay} \qquad 
+%
+%\vspace{5pt}
+%
+%\begin{large} \faEnvelope \end{large}
+%{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} \qquad
+%
+%\vspace{5pt}
+%
+%\begin{large} \faPhone \end{large} (425) 444-7070} \qquad
+%
+%\vspace{5pt}
+%
+%\begin{large} \faLinkedinSquare \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
+%
+%\vspace{5pt}
 
 \section{Coursework}
 \runsubsection{Graduate}
@@ -240,8 +303,8 @@ Web Infrastructure \\
 \section{Skills}
 \runsubsection{LANGUAGES}
 \location{}{
-Python • C • C++ • MATLAB\\
-JavaScript • HTML/CSS • Bash \\  
+Python • C • C++  MATLAB •
+JavaScript  HTML/CSS • Bash
 }
 
 \quad
@@ -249,17 +312,17 @@ JavaScript • HTML/CSS • Bash \\
 \runsubsection{MACHINE LEARNING \& COMPUTER VISION}
 \location{}{
 
-Keras • Scikit-learn • OpenCV \\  
-Numpy • Pandas • Jupyter Notebook • Matplotlib 
+Keras • Scikit-learn  OpenCV •
+Numpy Pandas • Jupyter Notebook • Matplotlib  PyTorch Lightning PyTorch • Tensorboard 
 }
 
 \quad
 
 \runsubsection{Backend \& Cloud}
 \location{}{
-Docker • Kubernetes • Helm\\
-MongoDB • MySQL • InfluxDB  \\
-AWS EC2 • Gunicorn • Flask
+Docker • Kubernetes  Helm •
+MongoDB  MySQL InfluxDB  •
+AWS EC2 Gunicorn • Flask
 %\locationbold{Git:} Github, Bitbucket \\
 %\locationbold{Python:} OpenCV, Boto3, Flask, sklearn \\
 %\locationbold{AWS:} S3, EC2, Lightsail \\
@@ -270,8 +333,8 @@ AWS EC2 • Gunicorn • Flask
 
 \runsubsection{HARDWARE}
 \location{}{
-Raspberry Pi • Jetson Nano\\
-Teensy 3.2/3.6 • Arduino Uno/Mega
+Raspberry Pi • Jetson Nano •
+Teensy 3.2/3.6  Arduino Uno/Mega
 Soldering
 }
 
@@ -279,12 +342,10 @@ Soldering
 
 \runsubsection{CAD}
 \location{}{
-Fusion 360 • Blender • 3D Printing\\
-
-
-
+Fusion 360 • Blender • 3D Printing 
 }
 
 
 \end{minipage} 
-\end{document}  \documentclass[]{article}
+\hfill
+\end{document}  
