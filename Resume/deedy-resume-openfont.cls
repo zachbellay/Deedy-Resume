@@ -28,7 +28,6 @@
 %\setsansfont[Color=primary, Scale=MatchLowercase,Mapping=tex-text, Path = fonts/century-gothic/]{GOTHIC}
 
 
-
 % Date command
 \usepackage[absolute]{textpos}
 \usepackage[USenglish]{isodate}
@@ -90,7 +89,7 @@ Last Updated on \today
 \color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{8pt}{9pt}\selectfont\bfseries {#1} \normalfont}
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{8pt}{9pt}\selectfont {#1\\} \normalfont\normalsize}
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{8pt}{9pt}\selectfont {#1} \normalfont\normalsize}
 
 % Normal Font
 \newcommand{\normal}[1]{\color{headings}\normalfont\normalsize{#1}}

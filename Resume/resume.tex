@@ -2,6 +2,7 @@
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \usepackage{scrextend}
+\usepackage{dirtytalk}
 %\usepackage{fontawesome}
 
 % Adds Font Awesome to XeLaTeX from system fonts (must have Font Awesome installed in system fonts)
@@ -40,14 +41,14 @@
 \fontspec[Path = fonts/century-gothic/]{GOTHIC}
 %
 \begin{large} \faGithub \end{large}
-\href{https://github.com/zachbellay/}{/zachbellay} \qquad 
+\href{https://github.com/zachbellay/}{\underline{/zachbellay}} \qquad 
 %
 \begin{large} \faEmail \end{large}
-{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} \qquad
+{\href{mailto:zbellay@scu.edu}{\underline{zbellay@gmail.com}} \qquad
 %
 \begin{large} \faPhone \end{large} (425) 444-7070} \qquad
 %
-\begin{large} \faLinkedin \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
+\begin{large} \faLinkedin \end{large} \href{https://www.linkedin.com/in/zachbellay/}{\underline{/in/zachbellay}} \qquad
 
 }
 
@@ -112,7 +113,7 @@
 \begin{tightemize}%
 
 \item Compared Support Vector Machines (SVM) and Convolutional Neural Network (CNN) in traffic sign detection.
-\item Developed and deployed small sensor network from scratch.
+\item Prototyped and deployed small sensor network from scratch. Used Docker, Kubernetes, Python Flask, AWS, Fusion 360, Arduino.
 
 \end{tightemize}
 \sectionsep
@@ -121,8 +122,8 @@
 \descript{| Computer Vision Intern}
 \location{Jan 2018 - Mar 2019 | San Jose, CA}
 \begin{tightemize}
-\item Created multi-camera IoT array to capture images of plants growing on a vertical plane.
 \item Developed image processing pipeline to remove lens distortion and to perform image stitching.
+\item Created multi-camera IoT array to capture images of plants  on a vertical plane.
 \end{tightemize}
 \sectionsep
 
@@ -131,9 +132,9 @@
 \location{Jun 2018 - Sep 2018 | Palo Alto, CA}
 \begin{tightemize}%
 
-\item Developed applications for Ford's "Arduino for cars."
+\item Developed applications for Ford's \say{Arduino for cars.}
  
-\item Created vehicle crash data marketplace proof of concept using Ethereum blockchain and InterPlanetary File System.
+\item Prototyped vehicle data marketplace using Ethereum blockchain and InterPlanetary File System.
 
 \end{tightemize}
 \sectionsep
@@ -160,18 +161,20 @@
 \end{tightemize}
 \sectionsep
 
-\textsc{\runsubsection{Fingerprint Matching}
+\runsubsection{Fingerprint Matching}
 \location{\\May 2019}
 \begin{tightemize}
 \item Compared SIFT, SURF, and CNN feature extraction methods for fingerprint matching on the SOCOFing fingerprint dataset.
-\end{tightemize}}
+\end{tightemize}
 \sectionsep
 
 \runsubsection{"Self Driving" Fish Tank}
 %\descript{| [In Progress]}
 \location{\\June 2017 – Present}
 \begin{tightemize}
-\item Designed omnidirectional robot with mounted fish bowl in Fusion 360 and developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
+\item Designed self driving robot with mounted fish bowl which utilizes computer vision to navigate.
+
+%\item Designed omnidirectional robot with mounted fish bowl in Fusion 360 and developing drivers to capture goldfish position with OpenCV and translate into commands to drive robot.
 \end{tightemize}
 \sectionsep
 
@@ -241,60 +244,6 @@
 
 % \smallskip
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\fontspec[Path = fonts/century-gothic/]{GOTHIC}
-%
-%\begin{large} \faGithub \end{large}
-%\href{https://github.com/zachbellay/}{/zachbellay} \qquad 
-%
-%\vspace{5pt}
-%
-%\begin{large} \faEnvelope \end{large}
-%{\href{mailto:zbellay@scu.edu}{zbellay@scu.edu} \qquad
-%
-%\vspace{5pt}
-%
-%\begin{large} \faPhone \end{large} (425) 444-7070} \qquad
-%
-%\vspace{5pt}
-%
-%\begin{large} \faLinkedinSquare \end{large} \href{https://www.linkedin.com/in/zachbellay/}{/in/zachbellay} \qquad
-%
-%\vspace{5pt}
-
-\section{Coursework}
-\runsubsection{Graduate}
-\location{}{
-Computer Vision I, II \\
-Digital Signal Processing \\
-ML \& DSP on FPGA \\
-Computational Creativity \\
-Adv. Operating Systems \\
-Adv. Computer Architecture \\
-%Mathematical Finance \\
-%Secure Coding in C/C++ \\
-}
-\sectionsep
-
-\vspace*{4pt}
-
-\runsubsection{Undergraduate}
-\location{}{
-Data Science \\
-Applied Machine Learning \\
-%Probability \& Statistics \\
-%Linear Algebra \\
-Theory of Algorithms \\
-Software Engineering \\
-Computer Networks \\
-Operating Systems \\
-Computer Architecture \\
-Web Infrastructure \\
-}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -303,7 +252,7 @@ Web Infrastructure \\
 \section{Skills}
 \runsubsection{LANGUAGES}
 \location{}{
-Python • C • C++  MATLAB •
+\\Python • C • C++  MATLAB •
 JavaScript  HTML/CSS • Bash
 }
 
@@ -321,8 +270,8 @@ Numpy Pandas • Jupyter Notebook • Matplotlib  PyTorch Lightning PyTorch • 
 \runsubsection{Backend \& Cloud}
 \location{}{
 Docker • Kubernetes  Helm •
-MongoDB  MySQL InfluxDB  •
-AWS EC2 Gunicorn • Flask
+MongoDB \\ MySQL • InfluxDB  •
+AWS EC2 •  Gunicorn • Flask
 %\locationbold{Git:} Github, Bitbucket \\
 %\locationbold{Python:} OpenCV, Boto3, Flask, sklearn \\
 %\locationbold{AWS:} S3, EC2, Lightsail \\
@@ -331,19 +280,91 @@ AWS EC2 Gunicorn • Flask
 
 \quad
 
-\runsubsection{HARDWARE}
-\location{}{
-Raspberry Pi • Jetson Nano •
-Teensy 3.2/3.6  Arduino Uno/Mega
-Soldering
-}
+%\runsubsection{HARDWARE}
+%\location{}{
+%Raspberry Pi • Jetson Nano •
+%Teensy 3.2/3.6  Arduino Uno/Mega
+%Soldering
+%}
 
-\quad
+%\quad
 
 \runsubsection{CAD}
 \location{}{
-Fusion 360 • Blender • 3D Printing 
+\\Fusion 360 • Blender • 3D Printing 
 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\runsubsection{Graduate}
+\location{}{
+\\Computer Vision I, II \\
+Digital Signal Processing \\
+ML \& DSP on FPGA \\
+Computational Creativity \\
+Adv. Operating Systems \\
+Adv. Computer Architecture \\
+%Mathematical Finance \\
+%Secure Coding in C/C++ \\
+}
+\sectionsep
+
+\vspace*{4pt}
+
+\runsubsection{Undergraduate}
+\location{}{
+Applied Machine Learning \\
+Data Science \\
+%Probability \& Statistics \\
+%Linear Algebra \\
+Theory of Algorithms \\
+Software Engineering \\
+Computer Networks \\
+Operating Systems \\
+Computer Architecture \\
+Web Infrastructure \\
+}
+\sectionsep
+
+
+% Descriptors command
+\newcommand{\awardyear}[1]{
+\fontspec[Path = fonts/century-gothic/]{GOTHICB}\fontsize{10pt}{10pt}\selectfont{#1}\normalfont\normalsize}
+
+\newcommand{\awarddesc}[1]{\fontspec[Path = fonts/century-gothic/]{GOTHIC}\fontsize{9pt}{10pt}\selectfont{#1}\normalfont\normalsize}
+
+
+\section{Awards}
+\location{}{
+\awardyear{2019}
+\awarddesc{- 2\textsuperscript{nd} Place Ford Summer Hackathon\\}
+
+\awardyear{2019}
+\awarddesc{- Best in Session Senior Design Conference\\}
+
+\awardyear{2018}
+\awarddesc{- 1\textsuperscript{st} Place Ford Summer Hackathon\\}
+
+\awardyear{2018}
+\awarddesc{- 2\textsuperscript{nd} Place  Hack for Humanity\\}
+
+}
+%\location{}{
+%2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+%Best in Session & Senior Design Conference\\
+%1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+%2\textsuperscript{nd} Place  & Hack for Humanity\\
+%}
+
+%2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+%2019	     & Best in Session & Senior Design Conference\\
+%2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+%2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
+%2016	     & 2\textsuperscript{nd} Place  & Google Games\\
 
 
 \end{minipage} 
