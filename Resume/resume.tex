@@ -33,6 +33,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
@@ -55,6 +57,10 @@
 \begin{large} \faPhone \end{large} (425) 444-7070} \qquad
 
 }
+% \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+% \noindent\rule{\textwidth}{3.0pt}
+% \vspace{1pt}
+% \noindent\rule{\textwidth}{0.2pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -69,21 +75,22 @@
 % \objectivetext{Impact driven developer looking to maximize impact within an organization by leveraging data and machine learning.}
 
 \hfill
-\begin{minipage}[t]{0.70\textwidth} 
+% \begin{minipage}[t]{0.70\textwidth} 
 
 \section{Education}
+\separator
 
 \runsubsection{Santa Clara University}
+\descript{}
+
+
+\textline{\normal{Master of Science, Computer Science and Engineering}}{}{\normal{GPA: 3.5/4.0}}
+
+\hspace{18pt}
+\normal{ Thesis: Deep Learning Methods for Efficient Image Coding}
 
 
 
-\newcommand{\normalbold}[1]{\color{headings}\fontspec[Path = fonts/century-gothic/]{GOTHICB}\normalsize{#1}}
-
-\textline{\normal{Master of Science, Computer Science and Engineering, June 2020}}{}{\normal{GPA: 3.5/4.0}}
-
-\begin{addmargin}[2em]{0em}% 1em left, 2em right
-\normal{ Thesis: Deep learning (GANs) for image compression.}
-\end{addmargin}
 
 
 \textline{\normal{Bachelor of Science, Computer Science and Engineering, June 2019}}{}{\normal{GPA: 3.3/4.0}}
@@ -91,7 +98,30 @@
 
 \sectionsep
 
+\section{Skills}
+\separator
 
+% Languages: Python, JavaScript, TypeScript, C/C++, HTML/CSS, Bash
+
+% Frontend/Mobile: React, React Native, Bootstrap, jQuery, Bulma, Zola
+
+% Backend: Django, FastAPI, Flask, PostgreSQL, SQLite, Redis, SQL
+
+% Computer Vision/Machine Learning: Pytorch, OpenCV,Scikit-learn, Numpy, Tensorboard, Jupyter Notebook,Matplotlib, MMDetection
+
+\vspace{-4pt}
+
+\skills{Languages:}{Python, JavaScript, TypeScript, C/C++, HTML/CSS, Bash, SQL, Node.js}
+
+\skills{Frontend:}{React, React Native, Bootstrap, jQuery, Bulma, Zola}
+
+\skills{Backend:}{Django, FastAPI, Flask, GraphQL, PostgreSQL, SQLite, Redis}
+
+\skills{Machine Learning:}{Pytorch, OpenCV, Scikit-learn, Numpy, MMDetection}
+
+\skills{Misc:}{Git, Docker, Docker Compose, GitHub Actions, DVC, AWS, Digital Ocean, Netlify}
+
+\vspace{8pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,76 +129,95 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\separator
+\vspace{-16pt}
 
-\runsubsection{OnePointOne}
-\descript{( Indoor Vertical Farming Startup ) | Software Engineer}
-\location{Jun 2020 - Present | San Jose, CA (Remote) }
+
+% \runsubsection{OnePointOne}
+% \descript{( Indoor Vertical Farming Startup ) | Software Engineer}
+% \location{Jun 2020 - Aug 2022 | San Jose, CA (Remote) }
+% \hfill
+\nameanddescript{OnePointOne}{~~(Indoor Vertical Farming Startup)~~|~~Software Engineer}
+\hfill\normal{Jun 2020 – Aug 2022}
+
+\vspace{-4pt}
+\location{San Jose, CA (Remote)}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}%
 
-\item Developing plant analysis service using deep learning and traditional computer vision techniques. %(detection, classification, segmentation).
-\item Managed the labeling of multiple custom datasets.
-\item Fine-tuned instance segmentation models, classification, and detection models for plant analysis.
-\item Developed an algorithm that calculates plant germination rate from imagery.
-\item Developed gradient descent based image stitching pipeline.
-% \item Building RESTful backend and SQL tables for managing all imagery objects in the Farm.
+
+\item Developed plant analysis service using deep learning to detect plant germination rate, leaf size, and leaf class.
+\item Developed custom image stitching software to stitch 780 images into one image.
+\item Developed GraphQL endpoints to manage and send commands to entities in the farm.
+\item Built RESTful CRUD backend and SQL tables for managing all imagery objects in the farm.
 
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Ford Motor Company}
-\descript{| Product Development Intern}
-\location{Jun 2019 - Sep 2019 | Palo Alto, CA}
+% \runsubsection{Ford Motor Company}
+% \descript{| Product Development Intern}
+% \location{Jun 2019 - Sep 2019 | Palo Alto, CA}
+\nameanddescript{Ford Motor Company}{~~|~~ Product Development Intern}
+\hfill\normal{Jun 2019 - Sep 2019}
+
+\vspace{-4pt}
+\location{Palo Alto, CA}
 %\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}%
 
-\item Prototyped and deployed test air quality sensor network from scratch. Used Docker, Kubernetes, Python Flask, AWS, Fusion 360, Arduino.
+\item Prototyped air quality sensor network with custom built hardware. Built with Python, Flask, Docker, Kubernetes, Arduino.
 \item Compared Support Vector Machines (SVM) and Convolutional Neural Network (CNN) in traffic sign detection.
 
 
 \end{tightemize}
 \sectionsep
 
-\runsubsection{OnePointOne}
-\descript{( Indoor Vertical Farming Startup ) | Computer Vision Intern}
-\location{Jan 2018 - Mar 2019 | San Jose, CA}
+\nameanddescript{OnePointOne}{~~(Indoor Vertical Farming Startup)~~|~~Computer Vision Intern}
+\hfill\normal{Jan 2018 – Mar 2019}
+
+\vspace{-4pt}
+\location{San Jose, CA}
 \begin{tightemize}
 \item Utilized traditional computer vision techniques for camera calibration.
-\item Programmed multiple raspberry pi cameras to capture images of of plants on a vertical plane.
+\item Programmed multiple raspberry pi cameras to capture images of plants on a vertical plane.
 % \item Created multi-camera IoT array to capture images of plants on a vertical plane.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Ford Motor Company}
-\descript{| Product Development Intern}
-\location{Jun 2018 - Sep 2018 | Palo Alto, CA}
-\begin{tightemize}%
+% \runsubsection{Ford Motor Company}
+% \descript{| Product Development Intern}
+% \location{Jun 2018 - Sep 2018 | Palo Alto, CA}
+% \begin{tightemize}%
 
-\item Developed applications for Ford's \say{Arduino for cars.}
-\item Prototyped vehicle data marketplace using Ethereum blockchain and InterPlanetary File System.
+% \item Developed applications for Ford's \say{Arduino for cars.}
+% \item Prototyped vehicle data marketplace using Ethereum blockchain and InterPlanetary File System.
 
-\end{tightemize}
-\sectionsep
+% \end{tightemize}
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \section{Projects}
-\runsubsection{Robust Moving Object Detection}
-\location{\\June 2018 – May 2019}
-\begin{tightemize}
-\item Developed and implemented robust moving object detection using L1 principal component analysis with Python.
-\end{tightemize}
-\sectionsep
+\vspace{4pt}
+\separator
+% \runsubsection{Robust Moving Object Detection}
 
-\runsubsection{Fingerprint Matching}
-\location{\\May 2019}
-\begin{tightemize}
-\item Compared SIFT, SURF, and CNN feature extraction methods for fingerprint matching on the SOCOFing fingerprint dataset.
-\end{tightemize}
-\sectionsep
+
+% \location{June 2018 – May 2019}
+% \begin{tightemize}
+% \item Developed and implemented robust moving object detection using L1 principal component analysis with Python.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Fingerprint Matching}
+% \hfill
+% \location{May 2019}
+% \begin{tightemize}
+% \item Compared SIFT, SURF, and CNN feature extraction methods for fingerprint matching on the SOCOFing fingerprint dataset.
+% \end{tightemize}
+% \sectionsep
 
 % \runsubsection{Spelling Bee Solver iOS App}
 % \location{\\December 2020}
@@ -177,22 +226,62 @@
 % \end{tightemize}
 % \sectionsep
 
-% \runsubsection{Simple Budgeting React App}
-% \location{\\March 2021}
-% \begin{tightemize}
-% \item Built a budgeting web-app with React and Material UI. Live site is available at \href{https://budget.zachbellay.com}{budget.zachbellay.com} and code is available at \href{https://github.com/zachbellay/react-simple-budgeting-app}{github.com/zachbellay/react-simple-budgeting-app}.
+
 
 
 % \end{tightemize}
 % \sectionsep
 
-% \runsubsection{\href{https://www.scu-course-evals.com}{scu-course-evals.com}}
-% \location{\\Dec 2019 – Feb 2020}
-% \begin{tightemize}
-% \item Built website used by 300+ SCU students to aggregate quarterly course evaluations searchable by class and professor.
-% \item Built with SQLite, SQLAlchemy, Google OAuth, Python, Flask, Bootstrap. Write up at \href{https://zachbellay.com/projects/scu-course-evals}{zachbellay.com/projects/scu-course-evals}.
-% \end{tightemize}
+
+\nameanddescript{\href{https://www.bulkdm.app}{www.bulkdm.app}}{~~|~~(Slack Plugin)}
+\hfill\normal{Jan 2022 – Present}
+% \vspace{2pt}
+
+\begin{tightemize}
+\item Building a SaaS Slack plugin to enable users to send bulk personalized DMs.
+\item Built with Django, Slack OAuth, PostgreSQL, Celery, Redis, hosted on Digital Ocean using Docker Compose.
+\end{tightemize}
+\sectionsep
+
+\nameanddescript{\href{https://zachbellay.com/projects/amazon-auto-purchaser}{Amazon Auto Purchaser Bot Challenge}}{}
+\hfill\normal{Jan 2022}
+
+\begin{tightemize}
+\item Wrote script to automatically purchase items from Amazon using only HTTP requests.
+\item Written in TypeScript. Write up at \href{https://zachbellay.com/projects/amazon-auto-purchaser}{zachbellay.com/projects/amazon-auto-purchaser}.
+\end{tightemize}
+\sectionsep
+
+\nameanddescript{\href{https://zachbellay.com/projects/defeating-perimeterx}{Defeating PerimeterX Anti-Botting Software Challenge}}{}
+\hfill\normal{Jan 2022}
+
+\begin{tightemize}
+\item Reverse engineered obfuscated, minified anti-botting JavaScript.
+\item Written in Node.js. Write up at \href{https://zachbellay.com/projects/defeating-perimeterx}{zachbellay.com/projects/defeating-perimeterx}.
+\end{tightemize}
+\sectionsep
+
+\nameanddescript{\href{https://www.budget.zachbellay.com}{budget.zachbellay.com}}{~~|~~(Simple Budgeting React App)}
+\hfill\normal{Mar 2021}
+
+\begin{tightemize}
+\item Built a budgeting web app with React and Material UI.
+\item Site is available at \href{https://budget.zachbellay.com}{budget.zachbellay.com} and write up at \href{https://zachbellay.com/projects/simple-budgeting-app}{zachbellay.com/projects/simple-budgeting-app}.
+\end{tightemize}
+\sectionsep
+
+\nameanddescript{\href{https://www.scu-course-evals.com}{scu-course-evals.com}}{~~|~~(Rate My Professor for Santa Clara University)}
+\hfill\normal{Dec 2019 – Feb 2020}
+% \vspace{2pt}
+
+\begin{tightemize}
+\item Launched website for students to get course and professor reviews with >1,100 monthly unique visitors.
+\item Aggregated 25,000+ course evaluations from Santa Clara University's course evaluation system.
+\item Built with Python, Flask, Google OAuth, SQLite, Bootstrap, hosted on Digital Ocean using Docker. Write up at \href{https://zachbellay.com/projects/scu-course-evals}{zachbellay.com/projects/scu-course-evals}.
+\end{tightemize}
 % \sectionsep
+
+% SCU Course Evals is a searchable aggregated directory of ~20k PDFs generated by student surveys of classes on a quarterly basis. Students and alumni can login and search for classes or professors and find the aggregated ratings of each class.
 
 % \runsubsection{"Self Driving" Fish Tank}
 % %\descript{| [In Progress]}
@@ -220,11 +309,11 @@
 
 %\sectionsep
 
-\section{Publications \& Patents} 
-%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
+% \section{Publications \& Patents} 
+% %\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
 
 %\section{Awards} 
 %\begin{tabular}{rll}
@@ -236,7 +325,7 @@
 %\end{tabular}
 %\sectionsep
 
-\sectionsep
+% \sectionsep
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -245,151 +334,151 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
-\hfill 
+
+% \hfill 
 %\begin{minipage}[t]{0.29\textwidth} 
 %\begin{minipage}[t]{0.29\textwidth} 
-\begin{minipage}[t]{0.20\textwidth} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{minipage}[t]{0.20\textwidth} 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     EDUCATION
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \section{Education} 
-% \runsubsection{Santa Clara University}
-% \location{Santa Clara, CA | June 2020}
-% M.S. in Computer Engineering \\
-% Pursuing thesis in GANs \\
-% GPA: 3.400/4.0
+% % \section{Education} 
+% % \runsubsection{Santa Clara University}
+% % \location{Santa Clara, CA | June 2020}
+% % M.S. in Computer Engineering \\
+% % Pursuing thesis in GANs \\
+% % GPA: 3.400/4.0
 
+% % \sectionsep
+
+% % \runsubsection{Santa Clara University}
+% % \location{Santa Clara, CA | June 2019}
+% % B.S. in Computer Engineering \\
+% % GPA: 3.257/4.0\\
+
+% % \smallskip
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SKILLS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Skills}
+% \runsubsection{LANGUAGES}
+% \location{}{
+% \\Python • C • C++  MATLAB •
+% JavaScript  HTML/CSS • Bash
+% }
+
+% \quad
+
+% \runsubsection{Machine Learning \& Computer Vision}
+% \location{}{
+
+% Pytorch • OpenCV Scikit-learn • Numpy  Tensorboard •
+% Jupyter Notebook • Matplotlib  MMDetection
+% }
+
+% \quad
+
+% \runsubsection{Backend}
+% \location{}{
+
+% Flask • FastAPI • Gunicorn • Uvicorn • Docker • PostgreSQL
+% }
+% \quad
+
+
+% %\runsubsection{HARDWARE}
+% %\location{}{
+% %Raspberry Pi • Jetson Nano •
+% %Teensy 3.2/3.6  Arduino Uno/Mega
+% %Soldering
+% %}
+
+% %\quad
+
+% % \runsubsection{CAD}
+% % \location{}{
+% % \\Fusion 360 • Blender • 3D Printing 
+% % }
 % \sectionsep
 
-% \runsubsection{Santa Clara University}
-% \location{Santa Clara, CA | June 2019}
-% B.S. in Computer Engineering \\
-% GPA: 3.257/4.0\\
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     COURSEWORK
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \smallskip
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\runsubsection{LANGUAGES}
-\location{}{
-\\Python • C • C++  MATLAB •
-JavaScript  HTML/CSS • Bash
-}
-
-\quad
-
-\runsubsection{Machine Learning \& Computer Vision}
-\location{}{
-
-Pytorch • OpenCV Scikit-learn • Numpy  Tensorboard •
-Jupyter Notebook • Matplotlib  MMDetection
-}
-
-\quad
-
-\runsubsection{Backend}
-\location{}{
-
-Flask • FastAPI • Gunicorn • Uvicorn • Docker • PostgreSQL
-}
-\quad
-
-
-%\runsubsection{HARDWARE}
-%\location{}{
-%Raspberry Pi • Jetson Nano •
-%Teensy 3.2/3.6  Arduino Uno/Mega
-%Soldering
-%}
-
-%\quad
-
-% \runsubsection{CAD}
+% \section{Coursework}
+% \runsubsection{Graduate}
 % \location{}{
-% \\Fusion 360 • Blender • 3D Printing 
+% \\Computer Vision I, II \\
+% Digital Signal Processing \\
+% Simultaneous Localization and Mapping \\
+% ML \& DSP on FPGA \\
+% Mathematical Finance \\
+% Adv. Algorithms \\
+% % Adv. Operating Systems \\
+% % Adv. Computer Architecture \\
+% % Computational Creativity \\
+% %Secure Coding in C/C++ \\
 % }
-\sectionsep
+% \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace*{4pt}
 
-\section{Coursework}
-\runsubsection{Graduate}
-\location{}{
-\\Computer Vision I, II \\
-Digital Signal Processing \\
-Simultaneous Localization and Mapping \\
-ML \& DSP on FPGA \\
-Mathematical Finance \\
-Adv. Algorithms \\
-% Adv. Operating Systems \\
-% Adv. Computer Architecture \\
-% Computational Creativity \\
-%Secure Coding in C/C++ \\
-}
-\sectionsep
-
-\vspace*{4pt}
-
-\runsubsection{Undergraduate}
-\location{}{
-Applied Machine Learning \\
-Data Science \\
-%Probability \& Statistics \\
-%Linear Algebra \\
-Theory of Algorithms \\
-Software Engineering \\
-Computer Networks \\
-Operating Systems \\
-Computer Architecture \\
-Web Infrastructure \\
-}
-\sectionsep
+% \runsubsection{Undergraduate}
+% \location{}{
+% Applied Machine Learning \\
+% Data Science \\
+% %Probability \& Statistics \\
+% %Linear Algebra \\
+% Theory of Algorithms \\
+% Software Engineering \\
+% Computer Networks \\
+% Operating Systems \\
+% Computer Architecture \\
+% Web Infrastructure \\
+% }
+% \sectionsep
 
 
-% Descriptors command
-\newcommand{\awardyear}[1]{
-\fontspec[Path = fonts/century-gothic/]{GOTHICB}\fontsize{10pt}{10pt}\selectfont{#1}\normalfont\normalsize}
+% % Descriptors command
+% \newcommand{\awardyear}[1]{
+% \fontspec[Path = fonts/century-gothic/]{GOTHICB}\fontsize{10pt}{10pt}\selectfont{#1}\normalfont\normalsize}
 
-\newcommand{\awarddesc}[1]{\fontspec[Path = fonts/century-gothic/]{GOTHIC}\fontsize{9pt}{10pt}\selectfont{#1}\normalfont\normalsize}
-
-
-\section{Awards}
-\location{}{
-\awardyear{2019}
-\awarddesc{- 2\textsuperscript{nd} Place Ford Summer Hackathon\\}
-
-\awardyear{2019}
-\awarddesc{- Best in Session Senior Design Conference\\}
-
-\awardyear{2018}
-\awarddesc{- 1\textsuperscript{st} Place Ford Summer Hackathon\\}
-
-\awardyear{2018}
-\awarddesc{- 2\textsuperscript{nd} Place  Hack for Humanity\\}
-
-}
-%\location{}{
-%2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
-%Best in Session & Senior Design Conference\\
-%1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
-%2\textsuperscript{nd} Place  & Hack for Humanity\\
-%}
-
-%2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
-%2019	     & Best in Session & Senior Design Conference\\
-%2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
-%2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
-%2016	     & 2\textsuperscript{nd} Place  & Google Games\\
+% \newcommand{\awarddesc}[1]{\fontspec[Path = fonts/century-gothic/]{GOTHIC}\fontsize{9pt}{10pt}\selectfont{#1}\normalfont\normalsize}
 
 
-\end{minipage} 
-\hfill
+% \section{Awards}
+% \location{}{
+% \awardyear{2019}
+% \awarddesc{- 2\textsuperscript{nd} Place Ford Summer Hackathon\\}
+
+% \awardyear{2019}
+% \awarddesc{- Best in Session Senior Design Conference\\}
+
+% \awardyear{2018}
+% \awarddesc{- 1\textsuperscript{st} Place Ford Summer Hackathon\\}
+
+% \awardyear{2018}
+% \awarddesc{- 2\textsuperscript{nd} Place  Hack for Humanity\\}
+
+% }
+% %\location{}{
+% %2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+% %Best in Session & Senior Design Conference\\
+% %1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+% %2\textsuperscript{nd} Place  & Hack for Humanity\\
+% %}
+
+% %2019	     & 2\textsuperscript{nd} Place  & Ford Summer Intern Hackathon\\
+% %2019	     & Best in Session & Senior Design Conference\\
+% %2018	     & 1\textsuperscript{st} Place  & Ford Summer Intern Hackathon\\
+% %2018	     & 2\textsuperscript{nd} Place  & Hack for Humanity\\
+% %2016	     & 2\textsuperscript{nd} Place  & Google Games\\
+
+
+% \end{minipage} 
+% \hfill
 \end{document}  

@@ -40,7 +40,7 @@ Last Updated on \today
 
 \newcommand{\namesection}[3]{
 \centering{
-\fontsize{34pt}{34pt}
+\fontsize{24pt}{24pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
@@ -62,6 +62,10 @@ Last Updated on \today
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{10pt}}
 
+% hrule section seperators
+% \newcommand{\hrulesectionsep[1]}{\vspace{10pt}\hrule\vspace{10pt}}
+
+\newcommand{\verticalline[1]}{\noindent\rule{\textwidth}{#1}}
 
 
 \titleformat{\section}{\color{section}
@@ -75,9 +79,13 @@ Last Updated on \today
 \newcommand{\runsubsection}[1]{
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\uppercase {#1}}
 
+
 % Descriptors command
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\nameanddescript}[2]{
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{10pt}\selectfont\uppercase {#1}\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#2} \normalfont}
 
 % Objective command
 \newcommand{\objective}[1]{
@@ -103,3 +111,13 @@ Last Updated on \today
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
+
+\newcommand{\skills}[2]{
+  \color{headings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{11pt}\selectfont {#1} \normal {#2}
+}
+
+\newcommand{\separator}{
+  \vspace{-9pt}\hfill
+  \noindent\rule{\textwidth}{1.0pt}\hfill
+  \vspace{6pt}
+}
